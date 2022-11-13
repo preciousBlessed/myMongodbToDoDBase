@@ -1,0 +1,26 @@
+### GET ALL
+GET http://localhost:3000/tasks HTTP/1.1
+
+### GET ONE
+GET http://localhost:3000/tasks/ HTTP/1.1
+
+### ADD A NEW TASK
+POST http://localhost:3000/tasks HTTP/1.1
+Content-Type: application/json
+
+{
+    "title":"Wash My Clother",
+    "description":"I prefere Saturdays."
+}
+
+### UPDATE A TASK
+PUT http://localhost:3000/tasks/637052a8f231fa06dd244783 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Assignment",
+    "description" : "Do my Zuri Assignment"
+}
+
+### DELETE ONE TASK
+DELETE http://localhost:3000/tasks/ HTTP/1.1
